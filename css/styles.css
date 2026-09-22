@@ -1,16 +1,17 @@
 /*
   css/styles.css
   ==============
-  Estilos propios del portafolio.
+  Estilos propios del portafolio (Rediseño moderno).
 
   Bootstrap resuelve la mayor parte del layout y los componentes.
-  Este archivo agrega identidad visual, accesibilidad y piezas específicas.
+  Este archivo aporta identidad visual renovada, accesibilidad y componentes específicos.
 */
 
-/* Variables reutilizables para mantener consistencia. */
+/* Variables reutilizables actualizadas con un toque más moderno y estilizado. */
 :root {
-  --portfolio-surface: rgba(127, 127, 127, 0.08);
-  --portfolio-border: rgba(127, 127, 127, 0.18);
+  --portfolio-surface: rgba(13, 110, 253, 0.03);
+  --portfolio-border: rgba(13, 110, 253, 0.12);
+  --portfolio-radius: 1rem;
 }
 
 /* Desplazamiento suave al usar links internos como #projects. */
@@ -21,35 +22,31 @@ html {
 /* Garantiza que el body pueda cubrir al menos toda la ventana. */
 body {
   min-height: 100vh;
+  letter-spacing: -0.01em;
 }
 
-/*
-  Compensa la navbar sticky:
-  al navegar a #projects, #about, etc., evita que el título quede escondido.
-*/
+/* Compensa la navbar sticky al navegar por secciones. */
 section[id] {
   scroll-margin-top: 5rem;
 }
 
 a {
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.25em;
+  transition: all 0.2s ease-in-out;
 }
 
-/* Mejora el reparto de texto en títulos cuando el navegador lo soporta. */
+/* Mejora el reparto de texto en títulos. */
 .text-balance {
   text-wrap: balance;
 }
 
-/* Utilidad propia: Bootstrap llega hasta ciertos tamaños de spacing. */
+/* Utilidad propia para espaciados amplios. */
 .py-lg-6 {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
-/*
-  Skip link de accesibilidad.
-  Está fuera de pantalla hasta recibir foco con teclado.
-*/
+/* Skip link de accesibilidad. */
 .skip-link {
   position: fixed;
   top: 0.75rem;
@@ -60,47 +57,65 @@ a {
   background: var(--bs-primary);
   color: white;
   transform: translateY(-150%);
+  transition: transform 0.2s ease;
 }
 
 .skip-link:focus {
   transform: translateY(0);
 }
 
-/* Fondo compartido por el hero principal y el hero del proyecto. */
+/* Fondo decorativo con gradientes suaves para el hero principal. */
 .hero-section,
 .project-hero {
   background:
-    radial-gradient(circle at 85% 10%, rgba(13, 110, 253, 0.14), transparent 32rem),
+    radial-gradient(circle at 90% 15%, rgba(13, 110, 253, 0.08), transparent 35rem),
     var(--bs-body-bg);
 }
 
-/* Separador visual entre grandes bloques de contenido. */
+/* Separador visual entre bloques de contenido. */
 .section-block {
   border-top: 1px solid var(--portfolio-border);
 }
 
-/* Etiqueta pequeña usada antes de algunos títulos de sección. */
+/* Etiqueta pequeña (Eyebrow). */
 .eyebrow {
   margin-bottom: 0.5rem;
   color: var(--bs-primary);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-/* Los links profesionales deben ser visibles y fáciles de reconocer. */
+/* Links profesionales destacados. */
 .professional-links a {
   font-weight: 600;
+  color: var(--bs-body-color);
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.375rem;
+  background-color: var(--portfolio-surface);
 }
 
-/* Superficies que deben adaptarse al tema claro/oscuro de Bootstrap. */
+.professional-links a:hover {
+  color: var(--bs-primary);
+  background-color: rgba(13, 110, 253, 0.08);
+}
+
+/* Tarjetas y superficies adaptadas al tema claro/oscuro. */
 .project-card,
 .card,
 .metric-card,
-/* Panel de contacto destacado al final de la Home. */
 .contact-panel {
   background: var(--bs-body-bg);
+  border-radius: var(--portfolio-radius);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Efecto de elevación suave al pasar el mouse por las tarjetas de proyectos. */
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.06) !important;
 }
 
 .metric-card,
@@ -108,56 +123,56 @@ a {
   border: 1px solid var(--portfolio-border);
 }
 
-/*
-  Mock visual de HelpDesk.
-  Sirve como placeholder pedagógico y puede reemplazarse por screenshot real.
-*/
+/* Mock visual del proyecto HelpDesk con estética tipo terminal moderna. */
 .project-visual {
   min-height: 22rem;
   background:
-    linear-gradient(145deg, rgba(13, 110, 253, 0.18), rgba(111, 66, 193, 0.12)),
+    linear-gradient(135deg, rgba(13, 110, 253, 0.06), rgba(111, 66, 193, 0.04)),
     var(--portfolio-surface);
+  border-top-left-radius: var(--portfolio-radius);
+  border-bottom-left-radius: var(--portfolio-radius);
 }
 
-/* Simulación de una pequeña ventana de aplicación. */
+/* Simulación de ventana de aplicación con bordes difuminados y sombra elegante. */
 .mock-window {
   max-width: 44rem;
   overflow: hidden;
   border: 1px solid var(--portfolio-border);
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   background: var(--bs-body-bg);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.08);
 }
 
-/* Barra superior decorativa del mock. */
+/* Barra superior del mock con botones tipo macOS. */
 .mock-window-bar {
   display: flex;
-  gap: 0.45rem;
-  padding: 0.8rem 1rem;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--portfolio-border);
-  background: var(--portfolio-surface);
+  background: rgba(127, 127, 127, 0.04);
 }
 
 .mock-window-bar span {
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.65rem;
+  height: 0.65rem;
   border-radius: 50%;
   background: var(--bs-secondary);
-  opacity: 0.55;
+  opacity: 0.4;
 }
 
 .mock-window-body {
   padding: 1.25rem;
 }
 
-/* Cada fila simula un ticket dentro del mock. */
+/* Tickets simulados dentro del mock. */
 .mock-ticket {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 0.9rem 0;
+  padding: 0.8rem 0;
   border-bottom: 1px solid var(--portfolio-border);
+  font-size: 0.9rem;
 }
 
 .mock-ticket:last-child {
@@ -172,24 +187,22 @@ a {
   margin-top: 0.4rem;
 }
 
-/*
-  Timeline:
-  cada <li> representa un hito de trayectoria.
-*/
+/* Timeline rediseñada con mejor espaciado y línea sutil. */
 .timeline li {
   position: relative;
-  padding: 0 0 1.4rem 1.5rem;
+  padding: 0 0 1.6rem 1.5rem;
   border-left: 2px solid var(--portfolio-border);
 }
 
 .timeline li::before {
   position: absolute;
-  top: 0.25rem;
-  left: -0.42rem;
-  width: 0.7rem;
-  height: 0.7rem;
+  top: 0.2rem;
+  left: -0.45rem;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background: var(--bs-primary);
+  box-shadow: 0 0 0 4px var(--bs-body-bg);
   content: "";
 }
 
@@ -203,41 +216,39 @@ a {
 }
 
 .timeline span {
-  margin-top: 0.2rem;
+  margin-top: 0.25rem;
   color: var(--bs-secondary-color);
+  font-size: 0.95rem;
 }
 
-/*
-  Diagrama de arquitectura:
-  overflow-x permite hacer scroll horizontal si el contenido es ancho.
-*/
+/* Diagrama de arquitectura adaptado. */
 .architecture-diagram {
   margin-top: 1.5rem;
   padding: 1.25rem;
   overflow-x: auto;
   border: 1px solid var(--portfolio-border);
-  border-radius: 1rem;
+  border-radius: var(--portfolio-radius);
   background: var(--portfolio-surface);
 }
 
+/* Panel de contacto inferior con un gradiente moderno. */
 .contact-panel {
   background:
-    linear-gradient(135deg, rgba(13, 110, 253, 0.1), transparent 60%),
+    linear-gradient(135deg, rgba(13, 110, 253, 0.04), transparent 70%),
     var(--bs-body-bg);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.03);
 }
 
-/* Limita el ancho del CV para mejorar legibilidad. */
+/* Limita el ancho del CV para mejorar la legibilidad. */
 .cv-page {
   max-width: 900px;
 }
 
-/*
-  Responsive para pantallas pequeñas.
-  Bootstrap es mobile-first; aquí solo ajustamos componentes propios.
-*/
+/* Responsive para pantallas pequeñas. */
 @media (max-width: 575.98px) {
   .project-visual {
     min-height: auto;
+    border-radius: 0;
   }
 
   .mock-ticket {
@@ -246,10 +257,7 @@ a {
   }
 }
 
-/*
-  Modo impresión del CV:
-  elimina navegación y controles para obtener un documento limpio.
-*/
+/* Modo impresión del CV. */
 @media print {
   .no-print,
   header,
