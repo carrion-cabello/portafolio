@@ -17,8 +17,8 @@
 <html lang="es" data-bs-theme="light">
 <head>
   <!-- =========================================================
-       1. METADATOS BASE DEL DOCUMENTO
-       ========================================================= -->
+        1. METADATOS BASE DEL DOCUMENTO
+        ========================================================= -->
 
   <!-- UTF-8 permite representar correctamente tildes, ñ y otros caracteres. -->
   <meta charset="UTF-8">
@@ -60,8 +60,8 @@
   >
 
   <!-- =========================================================
-       2. OPEN GRAPH Y PREVIEWS SOCIALES
-       ========================================================= -->
+        2. OPEN GRAPH Y PREVIEWS SOCIALES
+        ========================================================= -->
 
   <!--
     Open Graph ayuda a definir cómo se presenta el enlace al compartirlo
@@ -104,8 +104,8 @@
   >
 
   <!-- =========================================================
-       3. TEMA CLARO / OSCURO ANTES DEL PRIMER PINTADO
-       ========================================================= -->
+        3. TEMA CLARO / OSCURO ANTES DEL PRIMER PINTADO
+        ========================================================= -->
 
   <!--
     Aplicamos el tema antes de pintar la página para reducir el cambio visual
@@ -136,8 +136,8 @@
   </script>
 
   <!-- =========================================================
-       4. DATOS ESTRUCTURADOS JSON-LD
-       ========================================================= -->
+        4. DATOS ESTRUCTURADOS JSON-LD
+        ========================================================= -->
 
   <!--
     JSON-LD describe explícitamente dos entidades:
@@ -187,8 +187,8 @@
   </script>
 
   <!-- =========================================================
-       5. ESTILOS
-       ========================================================= -->
+        5. ESTILOS
+        ========================================================= -->
 
   <!-- Bootstrap resuelve grilla, navbar, botones, spacing y responsive. -->
   <link
@@ -206,8 +206,8 @@
 
 <body>
   <!-- =========================================================
-       6. ACCESIBILIDAD: SALTAR AL CONTENIDO
-       ========================================================= -->
+        6. ACCESIBILIDAD: SALTAR AL CONTENIDO
+        ========================================================= -->
 
   <!--
     Este enlace aparece cuando recibe foco con teclado.
@@ -218,8 +218,8 @@
   </a>
 
   <!-- =========================================================
-       7. HEADER / NAVBAR
-       ========================================================= -->
+        7. HEADER / NAVBAR
+        ========================================================= -->
 
   <!--
     sticky-top mantiene la navegación disponible durante el scroll.
@@ -257,6 +257,9 @@
               <a class="nav-link" href="#projects">Proyectos</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#case-study">Caso de estudio</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#skills">Capacidades</a>
             </li>
             <li class="nav-item">
@@ -285,8 +288,8 @@
   </header>
 
   <!-- =========================================================
-       8. CONTENIDO PRINCIPAL
-       ========================================================= -->
+        8. CONTENIDO PRINCIPAL
+        ========================================================= -->
   <main id="main-content">
 
     <!-- =======================================================
@@ -330,7 +333,7 @@
             >
               <a href="https://github.com/carrion-cabello">GitHub</a>
               <a href="https://www.linkedin.com/in/melina-carri%C3%B3n-519546401/">LinkedIn</a>
-              <a href="melina4018@gmail.com">Email</a>
+              <a href="mailto:melina4018@gmail.com">Email</a>
               <a href="tel:+56912345678">Teléfono</a>
             </nav>
           </div>
@@ -444,24 +447,6 @@
                     Ver caso de estudio
                   </a>
 
-                  <!--
-                    LINK DEL DEPLOY DE HELPDESK
-                    ===========================
-                    Después de desplegar HelpDesk en Railway:
-
-                    1. abre el servicio `helpdesk`;
-                    2. copia el dominio público generado por Railway;
-                    3. reemplaza TU_DOMINIO por el dominio REAL.
-
-                    Ejemplo:
-                    https://helpdesk-production-xxxx.up.railway.app/
-
-                    IMPORTANTE:
-                    - enlaza la HOME de la aplicación, no /api/v1/health;
-                    - prueba la URL antes de publicar el portafolio;
-                    - si todavía no existe un deploy funcional, quita
-                      temporalmente este botón en vez de publicar un link roto.
-                  -->
                   <a
                     href="https://github.com/carrion-cabello/helpdesk.git"
                     class="btn btn-outline-secondary"
@@ -484,6 +469,53 @@
             </div>
           </div>
         </article>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         CASO DE ESTUDIO (Requerido para el Portafolio Técnico)
+         ======================================================= -->
+    <section
+      id="case-study"
+      class="section-block py-5 bg-body-tertiary"
+      aria-labelledby="case-study-title"
+    >
+      <div class="container">
+        <div class="section-heading mb-4">
+          <p class="eyebrow">Caso de estudio técnico</p>
+          <h2 id="case-study-title" class="display-6 fw-bold">
+            Análisis de proyecto: Alke Wallet / HelpDesk
+          </h2>
+          <p class="text-body-secondary col-lg-8 mb-0">
+            Detalle estructurado del desafío técnico, arquitectura de solución y aprendizajes clave.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <h3 class="h4 text-primary mb-3">1. Contexto y Desafío</h3>
+              <p><strong>Descripción:</strong> Desarrollo de una solución backend y modelado de base de datos relacional para gestionar un sistema de transacciones y control de usuarios.</p>
+              <p><strong>Desafío principal:</strong> Garantizar la integridad referencial de los datos, aplicar los principios ACID y asegurar una correcta comunicación entre las entidades (Usuario, Transacción y Moneda).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <h3 class="h4 text-primary mb-3">2. Solución y Tecnologías</h3>
+              <p><strong>Solución propuesta:</strong> Implementación de esquemas relacionales normalizados en 3FN y consultas SQL avanzadas (JOINs, funciones de agregación y transacciones controladas).</p>
+              <p><strong>Herramientas técnicas:</strong> Node.js, Express, PostgreSQL, SQL, Sequelize y Git.</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card border-0 shadow-sm p-4">
+              <h3 class="h4 text-primary mb-3">3. Aprendizajes e Impacto</h3>
+              <p><strong>Principales aprendizajes:</strong> Dominio de la arquitectura cliente-servidor, manejo seguro de bases de datos relacionales y estructuración de código modular bajo buenas prácticas de la industria.</p>
+              <p class="mb-0"><strong>Justificación de la elección:</strong> Elegí este proyecto porque refleja de manera integral las capacidades Full Stack adquiridas, uniendo la persistencia de datos relacionales con la lógica de negocio en el backend.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -579,8 +611,7 @@
             </p>
             <p class="mb-0">
               Fuera del desarrollo me interesan la música, la fotografía y el
-              aprendizaje continuo. Este párrafo debe reemplazarse por una nota
-              personal breve y verdadera del autor.
+              aprendizaje continuo.
             </p>
           </div>
 
@@ -594,8 +625,8 @@
                     <span>Fundamentos, frontend, backend, SQL y APIs.</span>
                   </li>
                   <li>
-                    <strong>Proyecto HelpDesk</strong>
-                    <span>Aplicación integrada con Web, API, CLI y PostgreSQL.</span>
+                    <strong>Proyecto HelpDesk & Alke Wallet</strong>
+                    <span>Aplicaciones integradas con Web, API, CLI y PostgreSQL.</span>
                   </li>
                   <li>
                     <strong>Próximo objetivo</strong>
@@ -634,21 +665,25 @@
 
             <div class="col-lg-5">
               <div class="d-grid gap-2">
-                <a class="btn btn-primary" href="melina4018@gmail.com">
-                  nombre@example.com
+                <a class="btn btn-primary" href="mailto:melina4018@gmail.com">
+                  melina4018@gmail.com
                 </a>
                 <a class="btn btn-outline-secondary" href="tel:+56912345678">
                   +56 9 1234 5678
                 </a>
                 <a
                   class="btn btn-outline-secondary"
-                  href="https://github.com/carrion-cabello/helpdesk.git"
+                  href="https://www.linkedin.com/in/melina-carri%C3%B3n-519546401/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </a>
                 <a
                   class="btn btn-outline-secondary"
-                  href="https://github.com/carrion-cabello/helpdesk.git"
+                  href="https://github.com/carrion-cabello"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GitHub
                 </a>
@@ -664,8 +699,8 @@
   </main>
 
   <!-- =========================================================
-       9. FOOTER
-       ========================================================= -->
+        9. FOOTER
+        ========================================================= -->
 
   <!--
     El footer vuelve a exponer identidad y enlaces importantes.
@@ -677,16 +712,16 @@
         © <span data-current-year></span> Melina Carrión.
       </p>
       <nav class="d-flex flex-wrap gap-3 small" aria-label="Enlaces del pie">
-        <a href="https://github.com/carrion-cabello/helpdesk.git">GitHub</a>
-        <a href="https://www.linkedin.com/in/melina-carri%C3%B3n-519546401/">LinkedIn</a>
-        <a href="melina4018@gmail.com">Email</a>
+        <a href="https://github.com/carrion-cabello" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/melina-carri%C3%B3n-519546401/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:melina4018@gmail.com">Email</a>
       </nav>
     </div>
   </footer>
 
   <!-- =========================================================
-       10. JAVASCRIPT
-       ========================================================= -->
+        10. JAVASCRIPT
+        ========================================================= -->
 
   <!--
     bootstrap.bundle incluye el JavaScript necesario para componentes
