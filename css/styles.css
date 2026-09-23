@@ -68,7 +68,7 @@ a {
 .hero-section,
 .project-hero {
   background:
-    radial-gradient(circle at 90% 15%, rgba(13, 110, 253, 0.08), transparent 35rem),
+    radial-gradient(circle at 90% 15%, rgba(98, 52, 173, 0.08), transparent 35rem),
     var(--bs-body-bg);
 }
 
