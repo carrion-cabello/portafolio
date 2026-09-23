@@ -67,7 +67,7 @@ El código está comentado con foco pedagógico. Los comentarios explican respon
 Antes de publicar el portafolio en GitHub Pages, reemplazar:
 
 ```text
-https://TU_DOMINIO.up.railway.app/
+https://helpdesk-production-6676114:07.up.railway.app/
 ```
 
 por el dominio público real de HelpDesk.

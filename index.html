@@ -317,8 +317,7 @@
             Proyectos destacados
           </h2>
           <p class="text-body-secondary col-lg-8 mb-0">
-            En lugar de enumerar tecnologías sin contexto, cada proyecto
-            explica qué problema resuelve y qué decisiones técnicas demuestra.
+            Curso Full stack JavaScript
           </p>
         </div>
 
@@ -437,65 +436,41 @@
                 role="img"
                 aria-label="Vista representativa del gestor de tickets HelpDesk"
               >
-                <div class="mock-window w-100">
-                  <div class="mock-window-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-window-body">
-                    <div class="d-flex justify-content-between gap-2 mb-3">
-                      <strong>HelpDesk</strong>
-                      <span class="badge text-bg-primary">Tickets</span>
-                    </div>
-                    <div class="mock-ticket">
-                      <span>API returns 500</span>
-                      <span class="badge text-bg-warning">In progress</span>
-                    </div>
-                    <div class="mock-ticket">
-                      <span>Reset user password</span>
-                      <span class="badge text-bg-success">Closed</span>
-                    </div>
-                    <div class="mock-ticket">
-                      <span>Upload evidence</span>
-                      <span class="badge text-bg-danger">Urgent</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                
 
             <div class="col-lg-7">
               <div class="card-body p-4 p-lg-5">
                 <p class="eyebrow">Full Stack Project</p>
-                <h3 class="card-title h2">HelpDesk</h3>
+                <h3 class="card-title h2">Calculator</h3>
                 <p class="card-text">
-                  Aplicación para gestionar tickets de soporte mediante una
-                  API REST compartida por una interfaz Web y un cliente CLI.
-                  Incluye autenticación JWT, relaciones de datos, filtros y
-                  archivos adjuntos.
+                  El desarrollo de la aplicación de consola en JavaScript denominada Calculator representó un desafío técnico clave enfocado en construir una solución interactiva para realizar operaciones matemáticas y gestionar un historial estructurado. El reto principal consistió en diseñar una arquitectura modular capaz de mantener el flujo activo de la aplicación mediante bucles de control, gestionar la interacción con el usuario mediante interfaces de consola y evitar fallos críticos como caídas por división entre cero o ingresos de datos erróneos.
+                  Como solución, se implementó un script estructurado con funciones reutilizables que encapsulan la lógica de las cuatro operaciones básicas, soportado por un menú interactivo controlado mediante estructuras condicionales y ciclos de repetición. Asimismo, cada cálculo válido se diseñó como un objeto con su propio método integrado, almacenándose en un arreglo global que permite su visualización y filtrado dinámico.
+                  Las herramientas técnicas utilizadas incluyeron JavaScript (ES6+) para la lógica algorítmica y la manipulación de arreglos de objetos mediante funciones de orden superior, el entorno del navegador junto con interfaces nativas como prompt(), alert() y console.log(), así como Git y GitHub para el control de versiones y documentación.
+                  Entre los principales aprendizajes destacan la consolidación en el uso de estructuras de control de flujo, la comprensión de la programación orientada a objetos básica y la importancia de aplicar validaciones defensivas para asegurar la robustez del software. Esto permitió alcanzar una cobertura funcional completa de las operaciones requeridas, un alto nivel de resiliencia ante entradas inválidas y una gran mantenibilidad del código gracias a la modularización. Las habilidades técnicas aplicadas comprenden el dominio de variables, operadores, funciones con parámetros y retornos, manejo avanzado de arreglos y objetos, y el control de flujos lógicos. Este proyecto forma parte del portafolio por reflejar la transición exitosa desde la lógica algorítmica fundamental hacia la creación de aplicaciones funcionales, limpias y preparadas para gestionar errores con solidez profesional.
+
                 </p>
 
                 <ul class="project-points">
-                  <li>CRUD y filtros de tickets.</li>
-                  <li>Autenticación con bcrypt y JWT.</li>
-                  <li>PostgreSQL con Sequelize.</li>
-                  <li>Web con Handlebars, Bootstrap y Fetch.</li>
-                  <li>CLI que consume la misma API.</li>
+                  <li>Operaciones matemáticas completas (suma, resta, multiplicación y división).</li>
+                  <li>Menú interactivo persistente con validación de entradas y prevención de división por cero.</li>
+                  <li>Gestión avanzada de historial mediante arreglos de objetos y funciones de filtrado.</li>
+                  
                 </ul>
 
                 <p class="small text-body-secondary">
-                  Node.js · Express · Sequelize · PostgreSQL · Handlebars · Bootstrap
+                  JavaScript · Consola del Navegador · Prompts y Alerts
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mt-4">
                   <a
-                    href="./projects/helpdesk.html"
+                    href="./projects/calculator.html"
                     class="btn btn-primary"
                   >
                     Ver caso de estudio
                   </a>
 
                   <a
-                    href="https://github.com/carrion-cabello/helpdesk.git"
+                    href="https://github.com/carrion-cabello/calculator.git"
                     class="btn btn-outline-secondary"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -504,7 +479,7 @@
                   </a>
 
                   <a
-                    href="https://github.com/carrion-cabello/helpdesk"
+                    href="https://github.com/carrion-cabello/calculator"
                     class="btn btn-outline-secondary"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -524,85 +499,42 @@
       class="section-block py-5"
       aria-labelledby="projects-title"
     >
-      <div class="container">
-        <div class="section-heading mb-4">
-          <p class="eyebrow">Evidencia técnica</p>
-          <h2 id="projects-title" class="display-6 fw-bold">
-            Proyectos destacados
-          </h2>
-          <p class="text-body-secondary col-lg-8 mb-0">
-            En lugar de enumerar tecnologías sin contexto, cada proyecto
-            explica qué problema resuelve y qué decisiones técnicas demuestra.
-          </p>
-        </div>
+      
 
-        <article class="card project-card border-0 shadow-sm overflow-hidden">
-          <div class="row g-0">
-            <div class="col-lg-5">
-              <div
-                class="project-visual h-100 p-4 d-flex align-items-center"
-                role="img"
-                aria-label="Vista representativa del gestor de tickets HelpDesk"
-              >
-                <div class="mock-window w-100">
-                  <div class="mock-window-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-window-body">
-                    <div class="d-flex justify-content-between gap-2 mb-3">
-                      <strong>HelpDesk</strong>
-                      <span class="badge text-bg-primary">Tickets</span>
-                    </div>
-                    <div class="mock-ticket">
-                      <span>API returns 500</span>
-                      <span class="badge text-bg-warning">In progress</span>
-                    </div>
-                    <div class="mock-ticket">
-                      <span>Reset user password</span>
-                      <span class="badge text-bg-success">Closed</span>
-                    </div>
-                    <div class="mock-ticket">
-                      <span>Upload evidence</span>
-                      <span class="badge text-bg-danger">Urgent</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+        
             <div class="col-lg-7">
               <div class="card-body p-4 p-lg-5">
                 <p class="eyebrow">Full Stack Project</p>
-                <h3 class="card-title h2">HelpDesk</h3>
+                <h3 class="card-title h2">TaskFlow</h3>
                 <p class="card-text">
-                  Aplicación para gestionar tickets de soporte mediante una
-                  API REST compartida por una interfaz Web y un cliente CLI.
-                  Incluye autenticación JWT, relaciones de datos, filtros y
-                  archivos adjuntos.
+                  El desarrollo de la aplicación web TaskFlow representó un desafío técnico integral enfocado en la gestión avanzada de tareas con JavaScript. El reto principal consistió en diseñar una arquitectura robusta bajo el paradigma de la Programación Orientada a Objetos que integrara de forma armónica la manipulación dinámica del DOM, el manejo de eventos complejos, la persistencia de datos mediante localStorage y la comunicación asíncrona con una API externa, garantizando una experiencia de usuario fluida y reactiva.
+                  Como solución, se implementó un sistema modular estructurado mediante clases como Tarea y GestorTareas, aprovechando las características avanzadas de ES6+, un control de versiones estructurado con Git, y la gestión de eventos para formularios, interacciones por cursor, cuentas regresivas y notificaciones asíncronas con retardos controlados.
+                  Las herramientas técnicas utilizadas incluyeron JavaScript moderno, el DOM del navegador, almacenamiento web local, llamadas HTTP mediante fetch() y un manejo riguroso de errores con bloques try/catch.
+                  Entre los principales aprendizajes destacan el dominio de la programación asíncrona, la sincronización de datos locales con fuentes remotas y la implementación de interfaces altamente interactivas. Esto permitió alcanzar un funcionamiento integral optimizado, escalable y resiliente ante fallos de red. Las habilidades técnicas aplicadas comprenden la programación orientada a objetos, el consumo de servicios web, la gestión de promesas y el control de flujos dinámicos. Este proyecto se integra al portafolio por reflejar la capacidad de construir aplicaciones web completas, modernas y preparadas para resolver escenarios de desarrollo profesional del mundo real.
+
                 </p>
 
                 <ul class="project-points">
-                  <li>CRUD y filtros de tickets.</li>
-                  <li>Autenticación con bcrypt y JWT.</li>
+                  <li>CRUD completo de tareas con gestión de fechas límite y cuentas regresivas.</li>
+                  <li>Programación Orientada a Objetos, manipulación dinámica del DOM y manejo de eventos.</li>
                   <li>PostgreSQL con Sequelize.</li>
-                  <li>Web con Handlebars, Bootstrap y Fetch.</li>
-                  <li>CLI que consume la misma API.</li>
+                  <li>Persistencia local con localStorage y consumo asíncrono de API mediante fetch().</li>
                 </ul>
 
                 <p class="small text-body-secondary">
-                  Node.js · Express · Sequelize · PostgreSQL · Handlebars · Bootstrap
+                  JavaScript · ES6+ · DOM · LocalStorage · Fetch API
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mt-4">
                   <a
-                    href="./projects/helpdesk.html"
+                    href="./projects/taskflow.html"
                     class="btn btn-primary"
                   >
                     Ver caso de estudio
                   </a>
 
                   <a
-                    href="https://github.com/carrion-cabello/helpdesk.git"
+                    href="https://github.com/carrion-cabello/taskflow.git"
                     class="btn btn-outline-secondary"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -611,7 +543,7 @@
                   </a>
 
                   <a
-                    href="https://github.com/carrion-cabello/helpdesk"
+                    href="https://github.com/carrion-cabello/taskflow"
                     class="btn btn-outline-secondary"
                     target="_blank"
                     rel="noopener noreferrer"
