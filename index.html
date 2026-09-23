@@ -305,6 +305,9 @@
     <!-- =======================================================
          PROYECTOS DESTACADOS
          ======================================================= -->
+<!-- =======================================================
+         PROYECTOS DESTACADOS
+         ======================================================= -->
     <section
       id="projects"
       class="section-block py-5"
@@ -321,7 +324,8 @@
           </p>
         </div>
 
-        <article class="card project-card border-0 shadow-sm overflow-hidden">
+        <!-- Proyecto 1: HelpDesk -->
+        <article class="card project-card border-0 shadow-sm overflow-hidden mb-4">
           <div class="row g-0">
             <div class="col-lg-5">
               <div
@@ -360,10 +364,7 @@
                 <p class="eyebrow">Full Stack Project</p>
                 <h3 class="card-title h2">HelpDesk</h3>
                 <p class="card-text">
-                  Aplicación para gestionar tickets de soporte mediante una
-                  API REST compartida por una interfaz Web y un cliente CLI.
-                  Incluye autenticación JWT, relaciones de datos, filtros y
-                  archivos adjuntos.
+                  Aplicación para gestionar tickets de soporte mediante una API REST compartida por una interfaz Web y un cliente CLI. Incluye autenticación JWT, relaciones de datos, filtros y archivos adjuntos.
                 </p>
 
                 <ul class="project-points">
@@ -379,28 +380,13 @@
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mt-4">
-                  <a
-                    href="./projects/helpdesk.html"
-                    class="btn btn-primary"
-                  >
+                  <a href="./projects/helpdesk.html" class="btn btn-primary">
                     Ver caso de estudio
                   </a>
-
-                  <a
-                    href="https://github.com/carrion-cabello/helpdesk.git"
-                    class="btn btn-outline-secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://github.com/carrion-cabello/helpdesk.git" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
                     Demo en vivo
                   </a>
-
-                  <a
-                    href="https://github.com/carrion-cabello/helpdesk"
-                    class="btn btn-outline-secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://github.com/carrion-cabello/helpdesk" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
                     Ver código
                   </a>
                 </div>
@@ -408,66 +394,42 @@
             </div>
           </div>
         </article>
-      </div>
-    </section>
-    
-        <section
-      id="projects"
-      class="section-block py-5"
-      aria-labelledby="projects-title"
-    >
-      
 
-        
-              >
-                
+        <!-- Proyecto 2: Calculator (Texto resumido y estructura corregida) -->
+        <article class="card project-card border-0 shadow-sm overflow-hidden mb-4">
+          <div class="row g-0">
+            <div class="col-lg-5">
+              <div class="project-visual h-100 p-4 d-flex align-items-center justify-content-center">
+                <span class="display-4 fw-bold text-primary opacity-50">123+</span>
+              </div>
+            </div>
 
             <div class="col-lg-7">
               <div class="card-body p-4 p-lg-5">
-                <p class="eyebrow">Full Stack Project</p>
+                <p class="eyebrow">JavaScript Project</p>
                 <h3 class="card-title h2">Calculator</h3>
                 <p class="card-text">
-                  El desarrollo de la aplicación de consola en JavaScript denominada Calculator representó un desafío técnico clave enfocado en construir una solución interactiva para realizar operaciones matemáticas y gestionar un historial estructurado. El reto principal consistió en diseñar una arquitectura modular capaz de mantener el flujo activo de la aplicación mediante bucles de control, gestionar la interacción con el usuario mediante interfaces de consola y evitar fallos críticos como caídas por división entre cero o ingresos de datos erróneos.
-                  Como solución, se implementó un script estructurado con funciones reutilizables que encapsulan la lógica de las cuatro operaciones básicas, soportado por un menú interactivo controlado mediante estructuras condicionales y ciclos de repetición. Asimismo, cada cálculo válido se diseñó como un objeto con su propio método integrado, almacenándose en un arreglo global que permite su visualización y filtrado dinámico.
-                  Las herramientas técnicas utilizadas incluyeron JavaScript (ES6+) para la lógica algorítmica y la manipulación de arreglos de objetos mediante funciones de orden superior, el entorno del navegador junto con interfaces nativas como prompt(), alert() y console.log(), así como Git y GitHub para el control de versiones y documentación.
-                  Entre los principales aprendizajes destacan la consolidación en el uso de estructuras de control de flujo, la comprensión de la programación orientada a objetos básica y la importancia de aplicar validaciones defensivas para asegurar la robustez del software. Esto permitió alcanzar una cobertura funcional completa de las operaciones requeridas, un alto nivel de resiliencia ante entradas inválidas y una gran mantenibilidad del código gracias a la modularización. Las habilidades técnicas aplicadas comprenden el dominio de variables, operadores, funciones con parámetros y retornos, manejo avanzado de arreglos y objetos, y el control de flujos lógicos. Este proyecto forma parte del portafolio por reflejar la transición exitosa desde la lógica algorítmica fundamental hacia la creación de aplicaciones funcionales, limpias y preparadas para gestionar errores con solidez profesional.
-
+                  Aplicación de consola interactiva en JavaScript diseñada para realizar operaciones matemáticas fundamentales y gestionar un historial estructurado de cálculos mediante arreglos de objetos y validaciones de errores defensivas.
                 </p>
 
                 <ul class="project-points">
-                  <li>Operaciones matemáticas completas (suma, resta, multiplicación y división).</li>
-                  <li>Menú interactivo persistente con validación de entradas y prevención de división por cero.</li>
-                  <li>Gestión avanzada de historial mediante arreglos de objetos y funciones de filtrado.</li>
-                  
+                  <li>Operaciones matemáticas completas y prevención de división por cero.</li>
+                  <li>Menú interactivo persistente en consola con validación de entradas.</li>
+                  <li>Gestión de historial mediante funciones de filtrado y objetos.</li>
                 </ul>
 
                 <p class="small text-body-secondary">
-                  JavaScript · Consola del Navegador · Prompts y Alerts
+                  JavaScript · ES6+ · Consola · Prompts y Alerts
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mt-4">
-                  <a
-                    href="./projects/calculator.html"
-                    class="btn btn-primary"
-                  >
+                  <a href="./projects/calculator.html" class="btn btn-primary">
                     Ver caso de estudio
                   </a>
-
-                  <a
-                    href="https://github.com/carrion-cabello/calculator.git"
-                    class="btn btn-outline-secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://github.com/carrion-cabello/calculator.git" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
                     Demo en vivo
                   </a>
-
-                  <a
-                    href="https://github.com/carrion-cabello/calculator"
-                    class="btn btn-outline-secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://github.com/carrion-cabello/calculator" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
                     Ver código
                   </a>
                 </div>
@@ -475,34 +437,28 @@
             </div>
           </div>
         </article>
-      </div>
-    </section>
 
-         <section
-      id="projects"
-      class="section-block py-5"
-      aria-labelledby="projects-title"
-    >
-      
+        <!-- Proyecto 3: TaskFlow (Texto resumido y estructura corregida) -->
+        <article class="card project-card border-0 shadow-sm overflow-hidden">
+          <div class="row g-0">
+            <div class="col-lg-5">
+              <div class="project-visual h-100 p-4 d-flex align-items-center justify-content-center">
+                <span class="display-4 fw-bold text-success opacity-50">✓</span>
+              </div>
+            </div>
 
-        
             <div class="col-lg-7">
               <div class="card-body p-4 p-lg-5">
                 <p class="eyebrow">Full Stack Project</p>
                 <h3 class="card-title h2">TaskFlow</h3>
                 <p class="card-text">
-                  El desarrollo de la aplicación web TaskFlow representó un desafío técnico integral enfocado en la gestión avanzada de tareas con JavaScript. El reto principal consistió en diseñar una arquitectura robusta bajo el paradigma de la Programación Orientada a Objetos que integrara de forma armónica la manipulación dinámica del DOM, el manejo de eventos complejos, la persistencia de datos mediante localStorage y la comunicación asíncrona con una API externa, garantizando una experiencia de usuario fluida y reactiva.
-                  Como solución, se implementó un sistema modular estructurado mediante clases como Tarea y GestorTareas, aprovechando las características avanzadas de ES6+, un control de versiones estructurado con Git, y la gestión de eventos para formularios, interacciones por cursor, cuentas regresivas y notificaciones asíncronas con retardos controlados.
-                  Las herramientas técnicas utilizadas incluyeron JavaScript moderno, el DOM del navegador, almacenamiento web local, llamadas HTTP mediante fetch() y un manejo riguroso de errores con bloques try/catch.
-                  Entre los principales aprendizajes destacan el dominio de la programación asíncrona, la sincronización de datos locales con fuentes remotas y la implementación de interfaces altamente interactivas. Esto permitió alcanzar un funcionamiento integral optimizado, escalable y resiliente ante fallos de red. Las habilidades técnicas aplicadas comprenden la programación orientada a objetos, el consumo de servicios web, la gestión de promesas y el control de flujos dinámicos. Este proyecto se integra al portafolio por reflejar la capacidad de construir aplicaciones web completas, modernas y preparadas para resolver escenarios de desarrollo profesional del mundo real.
-
+                  Aplicación web avanzada para la gestión de tareas desarrollada bajo el paradigma de Programación Orientada a Objetos. Integra manipulación dinámica del DOM, persistencia local con localStorage y consumo asíncrono de APIs.
                 </p>
 
                 <ul class="project-points">
                   <li>CRUD completo de tareas con gestión de fechas límite y cuentas regresivas.</li>
-                  <li>Programación Orientada a Objetos, manipulación dinámica del DOM y manejo de eventos.</li>
-                  <li>PostgreSQL con Sequelize.</li>
-                  <li>Persistencia local con localStorage y consumo asíncrono de API mediante fetch().</li>
+                  <li>Programación Orientada a Objetos y manejo dinámico del DOM.</li>
+                  <li>Persistencia local con localStorage y consumo de servicios con Fetch API.</li>
                 </ul>
 
                 <p class="small text-body-secondary">
@@ -510,28 +466,13 @@
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mt-4">
-                  <a
-                    href="./projects/taskflow.html"
-                    class="btn btn-primary"
-                  >
+                  <a href="./projects/taskflow.html" class="btn btn-primary">
                     Ver caso de estudio
                   </a>
-
-                  <a
-                    href="https://github.com/carrion-cabello/taskflow.git"
-                    class="btn btn-outline-secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://github.com/carrion-cabello/taskflow.git" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
                     Demo en vivo
                   </a>
-
-                  <a
-                    href="https://github.com/carrion-cabello/taskflow"
-                    class="btn btn-outline-secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://github.com/carrion-cabello/taskflow" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
                     Ver código
                   </a>
                 </div>
@@ -539,8 +480,9 @@
             </div>
           </div>
         </article>
+
       </div>
-    </section> 
+    </section>
 
     <!-- =======================================================
          CASO DE ESTUDIO
