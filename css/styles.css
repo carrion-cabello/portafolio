@@ -275,3 +275,9 @@ a {
     text-decoration: none;
   }
 }
+/* Agrega esto a tu archivo CSS principal */
+.project-visual img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
